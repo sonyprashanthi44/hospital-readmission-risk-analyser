@@ -1,0 +1,9 @@
+[build]
+builder = "NIXPACKS"
+buildCommand = "pip install -r requirements.txt"
+
+[deploy]
+startCommand = "python scripts/start_services.py"
+restartPolicyType = "ON_FAILURE"
+healthcheckPath = "/"
+healthcheckTimeout = 300

@@ -1,0 +1,13 @@
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+pydantic==2.10.4
+scikit-learn==1.6.0
+shap==0.46.0
+pandas==2.2.3
+numpy==2.2.1
+joblib==1.4.2
+streamlit==1.41.1
+plotly==5.24.1
+httpx==0.28.1
+python-multipart==0.0.20
+matplotlib==3.10.0

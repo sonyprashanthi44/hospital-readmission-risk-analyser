@@ -1,0 +1,236 @@
+{
+  "roc_auc": 0.6505473564040494,
+  "avg_precision": 0.40903267612899813,
+  "accuracy": 0.6237315498154982,
+  "f1": 0.44685539922020684,
+  "brier": 0.22984489799374502,
+  "n_train": 34685,
+  "n_test": 8672,
+  "positive_rate_test": 0.26199261992619927,
+  "report": {
+    "0": {
+      "precision": 0.8109018830525273,
+      "recall": 0.63921875,
+      "f1-score": 0.7148973350808213,
+      "support": 6400.0
+    },
+    "1": {
+      "precision": 0.3633857182244279,
+      "recall": 0.5801056338028169,
+      "f1-score": 0.44685539922020684,
+      "support": 2272.0
+    },
+    "accuracy": 0.6237315498154982,
+    "macro avg": {
+      "precision": 0.5871438006384776,
+      "recall": 0.6096621919014085,
+      "f1-score": 0.580876367150514,
+      "support": 8672.0
+    },
+    "weighted avg": {
+      "precision": 0.6936559505698887,
+      "recall": 0.6237315498154982,
+      "f1-score": 0.6446723260546086,
+      "support": 8672.0
+    }
+  },
+  "feature_cols": [
+    "age_mid",
+    "race_enc",
+    "gender_enc",
+    "time_in_hospital",
+    "num_lab_procedures",
+    "num_procedures",
+    "num_medications",
+    "number_outpatient",
+    "number_emergency",
+    "number_inpatient",
+    "number_diagnoses",
+    "a1c_enc",
+    "glu_enc",
+    "change_enc",
+    "diabetesMed_enc",
+    "diag_enc",
+    "insulin_enc",
+    "metformin_enc",
+    "glipizide_enc",
+    "glyburide_enc",
+    "pioglitazone_enc"
+  ],
+  "diag_map": {
+    "Circulatory": 0,
+    "Diabetes": 1,
+    "Digestive": 2,
+    "E-codes": 3,
+    "Genitourinary": 4,
+    "Injury": 5,
+    "Musculoskeletal": 6,
+    "Neoplasms": 7,
+    "Other": 8,
+    "Respiratory": 9,
+    "Unknown": 10,
+    "V-codes": 11
+  },
+  "dataset": "UCI Diabetes 130-US hospitals for years 1999-2008",
+  "analytics": {
+    "by_age": [
+      {
+        "age_band": "[0-10)",
+        "count": 66,
+        "mean_risk": 0.19086373195826387,
+        "readmit_rate": 0.045454545454545456
+      },
+      {
+        "age_band": "[10-20)",
+        "count": 275,
+        "mean_risk": 0.282950541623646,
+        "readmit_rate": 0.14545454545454545
+      },
+      {
+        "age_band": "[20-30)",
+        "count": 713,
+        "mean_risk": 0.49126602946251796,
+        "readmit_rate": 0.33099579242636745
+      },
+      {
+        "age_band": "[30-40)",
+        "count": 1595,
+        "mean_risk": 0.4518861006907292,
+        "readmit_rate": 0.2658307210031348
+      },
+      {
+        "age_band": "[40-50)",
+        "count": 4088,
+        "mean_risk": 0.44878226801927545,
+        "readmit_rate": 0.25122309197651665
+      },
+      {
+        "age_band": "[50-60)",
+        "count": 7215,
+        "mean_risk": 0.4472986267054645,
+        "readmit_rate": 0.2311850311850312
+      },
+      {
+        "age_band": "[60-70)",
+        "count": 9655,
+        "mean_risk": 0.48257623538382455,
+        "readmit_rate": 0.2591403417918177
+      },
+      {
+        "age_band": "[70-80)",
+        "count": 11228,
+        "mean_risk": 0.49994092505327437,
+        "readmit_rate": 0.27333452084075527
+      },
+      {
+        "age_band": "[80-90)",
+        "count": 7342,
+        "mean_risk": 0.5063948604359438,
+        "readmit_rate": 0.2830291473712885
+      },
+      {
+        "age_band": "[90-100)",
+        "count": 1180,
+        "mean_risk": 0.5009282610558893,
+        "readmit_rate": 0.2627118644067797
+      }
+    ],
+    "by_diagnosis": [
+      {
+        "diag_group": "Unknown",
+        "count": 9,
+        "mean_risk": 0.6041826623580807,
+        "readmit_rate": 0.5555555555555556
+      },
+      {
+        "diag_group": "V-codes",
+        "count": 736,
+        "mean_risk": 0.5694560527476008,
+        "readmit_rate": 0.36141304347826086
+      },
+      {
+        "diag_group": "Injury",
+        "count": 3006,
+        "mean_risk": 0.4950196008998813,
+        "readmit_rate": 0.28409846972721225
+      },
+      {
+        "diag_group": "Circulatory",
+        "count": 13087,
+        "mean_risk": 0.4905396818535965,
+        "readmit_rate": 0.2662947963628028
+      },
+      {
+        "diag_group": "Diabetes",
+        "count": 3847,
+        "mean_risk": 0.48921870420916375,
+        "readmit_rate": 0.2955549779048609
+      },
+      {
+        "diag_group": "Genitourinary",
+        "count": 2123,
+        "mean_risk": 0.48814176780542695,
+        "readmit_rate": 0.26142251530852567
+      },
+      {
+        "diag_group": "Digestive",
+        "count": 4003,
+        "mean_risk": 0.48397362848068187,
+        "readmit_rate": 0.25355983012740446
+      },
+      {
+        "diag_group": "Other",
+        "count": 6985,
+        "mean_risk": 0.4756108372538901,
+        "readmit_rate": 0.26055833929849676
+      },
+      {
+        "diag_group": "Neoplasms",
+        "count": 1471,
+        "mean_risk": 0.45918422540262577,
+        "readmit_rate": 0.23521414004078858
+      },
+      {
+        "diag_group": "Respiratory",
+        "count": 6007,
+        "mean_risk": 0.450645791805407,
+        "readmit_rate": 0.23356084568003996
+      },
+      {
+        "diag_group": "Musculoskeletal",
+        "count": 2082,
+        "mean_risk": 0.43803519216430514,
+        "readmit_rate": 0.22622478386167147
+      },
+      {
+        "diag_group": "E-codes",
+        "count": 1,
+        "mean_risk": 0.38255699749158384,
+        "readmit_rate": 0.0
+      }
+    ]
+  },
+  "shap_mean_abs": {
+    "number_inpatient": 0.06989867687763883,
+    "time_in_hospital": 0.021799154923338337,
+    "age_mid": 0.017781540064835795,
+    "number_diagnoses": 0.013556305334087412,
+    "diag_enc": 0.013123607414595005,
+    "num_lab_procedures": 0.012203241660308107,
+    "num_procedures": 0.009233061700715054,
+    "num_medications": 0.00848398289433771,
+    "diabetesMed_enc": 0.008258527133958526,
+    "number_emergency": 0.006332415151260138,
+    "metformin_enc": 0.004742215925359326,
+    "race_enc": 0.003374801172288214,
+    "a1c_enc": 0.003330148848575065,
+    "insulin_enc": 0.0029661844484216303,
+    "glipizide_enc": 0.0018654429742796664,
+    "number_outpatient": 0.0018086967042203895,
+    "glu_enc": 0.0012072386576148096,
+    "pioglitazone_enc": 0.0011099528850716885,
+    "gender_enc": 0.0008352748683656031,
+    "glyburide_enc": 0.00042453790995586836,
+    "change_enc": 0.0002966536303636451
+  }
+}
