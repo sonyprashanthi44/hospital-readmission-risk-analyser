@@ -105,6 +105,6 @@ flow.md      end-to-end execution story
 ## Author
 
 **Sony Prashanthi**  
-GitHub: [sonyprashanthi44/hospital-readmission-predictor](https://github.com/sonyprashanthi44/hospital-readmission-predictor)
+GitHub: [sonyprashanthi44/hospital-readmission-risk-analyser](https://github.com/sonyprashanthi44/hospital-readmission-risk-analyser)
 
 MIT License
