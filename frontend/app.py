@@ -67,6 +67,10 @@ st.markdown(
     '<p class="subtitle">30-day risk scoring · Gradient Boosting · SHAP · UCI Diabetes 130-US hospitals</p>',
     unsafe_allow_html=True,
 )
+st.markdown(
+    '<p style="margin-top:-0.4rem;margin-bottom:0.8rem;color:#0f766e;font-weight:600;">Author: Sony Prashanthi</p>',
+    unsafe_allow_html=True,
+)
 
 mode = "API" if USE_API else "Local model"
 metrics = {}
@@ -97,7 +101,7 @@ except Exception as api_exc:
         st.error(f"Failed to start: {exc}")
         st.stop()
 
-st.caption(f"Runtime: **{mode}** · educational demo, not a clinical device")
+st.caption(f"Author: **Sony Prashanthi** · Runtime: **{mode}** · educational demo, not a clinical device")
 
 tab_dash, tab_predict, tab_about = st.tabs(["📊 Population dashboard", "🩺 Patient risk", "ℹ️ About"])
 
@@ -215,12 +219,19 @@ with tab_predict:
 with tab_about:
     st.markdown(
         """
+        ### Author
+        **Sony Prashanthi**  
+        GitHub: [sonyprashanthi44](https://github.com/sonyprashanthi44) ·  
+        Project: [hospital-readmission-risk-analyser](https://github.com/sonyprashanthi44/hospital-readmission-risk-analyser)
+
         ### Data
         **UCI Diabetes 130-US hospitals (1999–2008)** — de-identified inpatient encounters used in readmission research.
+
         ### Model
         scikit-learn `HistGradientBoostingClassifier` + SHAP explanations.
-        ### Links
-        - GitHub: https://github.com/sonyprashanthi44/hospital-readmission-predictor
+
+        ### Stack
+        FastAPI · Streamlit · SHAP · Docker / Railway
         """
     )
 
